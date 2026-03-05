@@ -1,0 +1,75 @@
+{
+  "database": "AIRBNB",
+  "schemas": {
+    "RAW": {
+      "tables": {
+        "RAW_REVIEWS": {
+          "columns": [
+            {
+              "name": "LISTING_ID",
+              "type": "NUMBER",
+              "nullable": "YES"
+            },
+            {
+              "name": "DATE",
+              "type": "TIMESTAMP_NTZ",
+              "nullable": "YES"
+            },
+            {
+              "name": "REVIEWER_NAME",
+              "type": "TEXT",
+              "nullable": "YES"
+            },
+            {
+              "name": "COMMENTS",
+              "type": "TEXT",
+              "nullable": "YES"
+            },
+            {
+              "name": "SENTIMENT",
+              "type": "TEXT",
+              "nullable": "YES"
+            }
+          ],
+          "sample_rows": [
+            {
+              "LISTING_ID": 7571301,
+              "DATE": "2021-08-22T00:00:00",
+              "REVIEWER_NAME": "Menno",
+              "COMMENTS": "Very clean and pretty apartment at an amazing location. You can step out and easily grab breakfast at every streetcorner surrounded by trees and lovely houses. Recommended",
+              "SENTIMENT": "positive"
+            },
+            {
+              "LISTING_ID": 7574664,
+              "DATE": "2019-10-10T00:00:00",
+              "REVIEWER_NAME": "Jochem",
+              "COMMENTS": "Nice centrally located place. Dominique is very helpful and the place is super nice designed. I would definitely recommend this place.",
+              "SENTIMENT": "positive"
+            },
+            {
+              "LISTING_ID": 7574664,
+              "DATE": "2020-01-01T00:00:00",
+              "REVIEWER_NAME": "Julian",
+              "COMMENTS": "Super nice location, great host was a good expierience",
+              "SENTIMENT": "positive"
+            },
+            {
+              "LISTING_ID": 7574664,
+              "DATE": "2021-09-28T00:00:00",
+              "REVIEWER_NAME": "Magnus",
+              "COMMENTS": "Perfect location with caf\u00e9srestaurants and shops around the corner, but the apartment is, as they say, quiet. Dominique and her family are easygoing people, so it is easy to stay with them. The apartment is beautiful. It is large with patios on both sides of the apartment. I hope to return.",
+              "SENTIMENT": "positive"
+            },
+            {
+              "LISTING_ID": 7575270,
+              "DATE": "2017-09-23T00:00:00",
+              "REVIEWER_NAME": "Lisa",
+              "COMMENTS": "Great location, nice people, we had a nice stay.",
+              "SENTIMENT": "positive"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
