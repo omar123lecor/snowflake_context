@@ -1,0 +1,255 @@
+{
+  "database": "AIRBNB",
+  "schemas": {
+    "DEV": {
+      "tables": {
+        "SCD_RAW_LISTINGS": {
+          "columns": [
+            {
+              "name": "ID",
+              "type": "NUMBER",
+              "nullable": "YES"
+            },
+            {
+              "name": "LISTING_URL",
+              "type": "TEXT",
+              "nullable": "YES"
+            },
+            {
+              "name": "NAME",
+              "type": "TEXT",
+              "nullable": "YES"
+            },
+            {
+              "name": "ROOM_TYPE",
+              "type": "TEXT",
+              "nullable": "YES"
+            },
+            {
+              "name": "MINIMUM_NIGHTS",
+              "type": "NUMBER",
+              "nullable": "YES"
+            },
+            {
+              "name": "HOST_ID",
+              "type": "NUMBER",
+              "nullable": "YES"
+            },
+            {
+              "name": "PRICE",
+              "type": "TEXT",
+              "nullable": "YES"
+            },
+            {
+              "name": "CREATED_AT",
+              "type": "TIMESTAMP_NTZ",
+              "nullable": "YES"
+            },
+            {
+              "name": "UPDATED_AT",
+              "type": "TIMESTAMP_NTZ",
+              "nullable": "YES"
+            },
+            {
+              "name": "DBT_SCD_ID",
+              "type": "TEXT",
+              "nullable": "YES"
+            },
+            {
+              "name": "DBT_UPDATED_AT",
+              "type": "TIMESTAMP_NTZ",
+              "nullable": "YES"
+            },
+            {
+              "name": "DBT_VALID_FROM",
+              "type": "TIMESTAMP_NTZ",
+              "nullable": "YES"
+            },
+            {
+              "name": "DBT_VALID_TO",
+              "type": "TIMESTAMP_NTZ",
+              "nullable": "YES"
+            }
+          ],
+          "sample_rows": [
+            {
+              "ID": 3176,
+              "LISTING_URL": "https://www.airbnb.com/rooms/3176",
+              "NAME": "Fabulous Flat in great Location",
+              "ROOM_TYPE": "Entire home/apt",
+              "MINIMUM_NIGHTS": 62,
+              "HOST_ID": 3718,
+              "PRICE": "$90.00",
+              "CREATED_AT": "2009-06-05T21:34:42",
+              "UPDATED_AT": "2009-06-05T21:34:42",
+              "DBT_SCD_ID": "c9e3bc0b5eb3a808ee31530eccdfa503",
+              "DBT_UPDATED_AT": "2009-06-05T21:34:42",
+              "DBT_VALID_FROM": "2009-06-05T21:34:42",
+              "DBT_VALID_TO": "2026-02-27T04:01:07.586000"
+            },
+            {
+              "ID": 7071,
+              "LISTING_URL": "https://www.airbnb.com/rooms/7071",
+              "NAME": "BrightRoom with sunny greenview!",
+              "ROOM_TYPE": "Private room",
+              "MINIMUM_NIGHTS": 1,
+              "HOST_ID": 17391,
+              "PRICE": "$33.00",
+              "CREATED_AT": "2009-08-12T12:30:30",
+              "UPDATED_AT": "2009-08-12T12:30:30",
+              "DBT_SCD_ID": "c2a3175b0e715a7ed8762c1c46fb3e6c",
+              "DBT_UPDATED_AT": "2009-08-12T12:30:30",
+              "DBT_VALID_FROM": "2009-08-12T12:30:30",
+              "DBT_VALID_TO": null
+            },
+            {
+              "ID": 9991,
+              "LISTING_URL": "https://www.airbnb.com/rooms/9991",
+              "NAME": "Geourgeous flat - outstanding views",
+              "ROOM_TYPE": "Entire home/apt",
+              "MINIMUM_NIGHTS": 0,
+              "HOST_ID": 33852,
+              "PRICE": "$180.00",
+              "CREATED_AT": "2015-07-30T05:08:52",
+              "UPDATED_AT": "2015-07-30T05:08:52",
+              "DBT_SCD_ID": "f9b718057a795e92cbb1c19ebfa79ca1",
+              "DBT_UPDATED_AT": "2015-07-30T05:08:52",
+              "DBT_VALID_FROM": "2015-07-30T05:08:52",
+              "DBT_VALID_TO": null
+            },
+            {
+              "ID": 14325,
+              "LISTING_URL": "https://www.airbnb.com/rooms/14325",
+              "NAME": "Apartment in Prenzlauer Berg",
+              "ROOM_TYPE": "Entire home/apt",
+              "MINIMUM_NIGHTS": 95,
+              "HOST_ID": 55531,
+              "PRICE": "$70.00",
+              "CREATED_AT": "2010-06-15T19:56:01",
+              "UPDATED_AT": "2010-06-15T19:56:01",
+              "DBT_SCD_ID": "fb48f80a251584a5a52026d12f4b7a22",
+              "DBT_UPDATED_AT": "2010-06-15T19:56:01",
+              "DBT_VALID_FROM": "2010-06-15T19:56:01",
+              "DBT_VALID_TO": null
+            },
+            {
+              "ID": 16644,
+              "LISTING_URL": "https://www.airbnb.com/rooms/16644",
+              "NAME": "In the Heart of Berlin - Kreuzberg",
+              "ROOM_TYPE": "Entire home/apt",
+              "MINIMUM_NIGHTS": 60,
+              "HOST_ID": 64696,
+              "PRICE": "$90.00",
+              "CREATED_AT": "2010-05-30T12:11:33",
+              "UPDATED_AT": "2010-05-30T12:11:33",
+              "DBT_SCD_ID": "71c6f379f3e401b0df63cd54e8f129b1",
+              "DBT_UPDATED_AT": "2010-05-30T12:11:33",
+              "DBT_VALID_FROM": "2010-05-30T12:11:33",
+              "DBT_VALID_TO": null
+            }
+          ]
+        },
+        "SEED_FULL_MOON_DATES": {
+          "columns": [
+            {
+              "name": "FULL_MOON_DATE",
+              "type": "DATE",
+              "nullable": "YES"
+            }
+          ],
+          "sample_rows": [
+            {
+              "FULL_MOON_DATE": "2009-01-11"
+            },
+            {
+              "FULL_MOON_DATE": "2009-02-09"
+            },
+            {
+              "FULL_MOON_DATE": "2009-03-11"
+            },
+            {
+              "FULL_MOON_DATE": "2009-04-09"
+            },
+            {
+              "FULL_MOON_DATE": "2009-05-09"
+            }
+          ]
+        }
+      }
+    },
+    "DEV__TEST_FAILURES": {
+      "tables": {
+        "ACCEPTED_VALUES_DIM_LISTINGS_C_1CA6148A08C62A5218F2A162F9D2A9A6": {
+          "columns": [
+            {
+              "name": "VALUE_FIELD",
+              "type": "TEXT",
+              "nullable": "YES"
+            },
+            {
+              "name": "N_RECORDS",
+              "type": "NUMBER",
+              "nullable": "YES"
+            }
+          ],
+          "sample_rows": []
+        },
+        "CONSISTENT_CREATED_AT": {
+          "columns": [
+            {
+              "name": "LISTING_ID",
+              "type": "NUMBER",
+              "nullable": "YES"
+            }
+          ],
+          "sample_rows": []
+        },
+        "DIM_LISTINGS_MINIMUM_NIGHTS": {
+          "columns": [
+            {
+              "name": "LISTING_ID",
+              "type": "NUMBER",
+              "nullable": "YES"
+            },
+            {
+              "name": "LISTING_NAME",
+              "type": "TEXT",
+              "nullable": "YES"
+            },
+            {
+              "name": "ROOM_TYPE",
+              "type": "TEXT",
+              "nullable": "YES"
+            },
+            {
+              "name": "MINIMUM_NIGHTS",
+              "type": "NUMBER",
+              "nullable": "YES"
+            },
+            {
+              "name": "HOST_ID",
+              "type": "NUMBER",
+              "nullable": "YES"
+            },
+            {
+              "name": "PRICE",
+              "type": "NUMBER",
+              "nullable": "YES"
+            },
+            {
+              "name": "CREATED_AT",
+              "type": "TIMESTAMP_NTZ",
+              "nullable": "YES"
+            },
+            {
+              "name": "UPDATED_AT",
+              "type": "TIMESTAMP_NTZ",
+              "nullable": "YES"
+            }
+          ],
+          "sample_rows": []
+        }
+      }
+    }
+  }
+}
