@@ -1,4 +1,4 @@
-# Snowflake Database Schema Extractor
+# Snowflake Database Extractor
 
 This Python script extracts **metadata and sample data** from a Snowflake database and exports it into structured JSON files.
 The generated files are designed to provide a **compact representation of the database structure**, including schemas, tables, column definitions, and example rows.
